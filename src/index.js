@@ -1,5 +1,10 @@
 import React from "react";
-import {render} from "react-dom";
-import App from "./components/App";
-
-render(<App />, document.getElementById("root"));
+import { render } from "react-dom";
+import App from "./containers/App";
+import GlobalState from "./containers/GlobalState";
+render(
+  <GlobalState>
+    <App />
+  </GlobalState>,
+  document.getElementById("root"),
+);

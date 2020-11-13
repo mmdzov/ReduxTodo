@@ -1,12 +1,14 @@
 import {createContext} from "react"
 
 const TodoContext = createContext({
-    todos: [],
-    todo: '',
+    state: [],
     handleCreteNewTodo: () => {},
     handleTodoInput: () => {},
     handleCompleteTodo: () => {},
-    handleDeleteTodo: () => {}
+    handleDeleteTodo: () => {},
+    handleUndo: () => {},
+    handleClearTrash: () => {},
+    handleUndoAll: () => {}
 })
 
 export default TodoContext;

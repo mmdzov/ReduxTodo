@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React, { Fragment } from "react";
+import AddNewTask from "../components/task/AddNewTask";
+import Todos from "../components/task/Todos";
 function App() {
   return (
-    <div className="">
-      test
+    <div>
+      <Fragment>
+        <AddNewTask />
+        <Todos />
+      </Fragment>
     </div>
   );
 }
